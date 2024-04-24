@@ -10,7 +10,7 @@ const service_schema = mongoose.Schema({
     },
     image:{
         type:String,
-        required:true
+        required:false
     }
 });
 const service = mongoose.model("service",service_schema);

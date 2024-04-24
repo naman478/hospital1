@@ -45,29 +45,29 @@ const itemData = [
     img: 'https://cdn.pixabay.com/photo/2013/02/24/01/17/surgery-85574_640.jpg',
     title: 'Blinds',
   },
-  {
-    img: 'https://cdn.pixabay.com/photo/2017/06/28/14/03/dental-2450751_640.jpg',
-    title: 'Chairs',
-  },
-  {
-    img: 'https://cdn.pixabay.com/photo/2017/10/04/09/56/laboratory-2815641_640.jpg',
-    title: 'Laptop',
-  },
-  {
-    img: 'https://cdn.pixabay.com/photo/2020/04/19/20/10/test-tube-5065426_640.jpg',
-    title: 'Doors',
-  },
-  {
-    img: 'https://cdn.pixabay.com/photo/2018/08/02/07/50/medical-procedures-3579029_640.jpg',
-    title: 'Coffee',
-  },
-  {
-    img: 'https://cdn.pixabay.com/photo/2014/11/12/19/25/diabetes-528678_640.jpg',
-    title: 'Storage',
-  },
-  {
-    img: 'https://cdn.pixabay.com/photo/2017/05/23/21/01/jar-2338584_640.jpg',
-    title: 'Candle',
-  },
+  // {
+  //   img: 'https://cdn.pixabay.com/photo/2017/06/28/14/03/dental-2450751_640.jpg',
+  //   title: 'Chairs',
+  // },
+  // {
+  //   img: 'https://cdn.pixabay.com/photo/2017/10/04/09/56/laboratory-2815641_640.jpg',
+  //   title: 'Laptop',
+  // },
+  // {
+  //   img: 'https://cdn.pixabay.com/photo/2020/04/19/20/10/test-tube-5065426_640.jpg',
+  //   title: 'Doors',
+  // },
+  // {
+  //   img: 'https://cdn.pixabay.com/photo/2018/08/02/07/50/medical-procedures-3579029_640.jpg',
+  //   title: 'Coffee',
+  // },
+  // {
+  //   img: 'https://cdn.pixabay.com/photo/2014/11/12/19/25/diabetes-528678_640.jpg',
+  //   title: 'Storage',
+  // },
+  // {
+  //   img: 'https://cdn.pixabay.com/photo/2017/05/23/21/01/jar-2338584_640.jpg',
+  //   title: 'Candle',
+  // },
   
 ];

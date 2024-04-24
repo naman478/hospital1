@@ -15,6 +15,9 @@ import Doctor from "./Components/User/pages/Doctor/Doctor";
 import PrivateRoutes from "./Privateroutes";
 import Form from "./Components/User/pages/Doctor/Form";
 import Doctorlogin from "./Components/User/Login/Doctorlogin";
+import payment from "./Components/User/pages/Doctor/Payment";
+import QR from "./Components/User/pages/Doctor/QR";
+import ConfirmationPage from "./Components/User/pages/Doctor/ConfirmationPage";
 
 import { useState} from "react";
 import Dashboard from "./Components/Admin/Dashboard";
@@ -30,12 +33,7 @@ function App() {
   const [is_admin, setIsAdmin] = useState(localStorage.getItem("is_admin"));
   const [is_doctor,setIsdoctor]=useState(localStorage.getItem("is_doctor"))
 
-  console.log(is_doctor)
-
-
-
-
-
+  console.log(is_doctor);
   return (
       
 
@@ -63,14 +61,17 @@ function App() {
                 <Route path="/services" Component={Services} />
             <Route path="/about" Component={About} />
                 <Route path="/doctor" Component={Doctor} />
+                <Route path="/confirmation" component={ConfirmationPage} />
 
 
                 <Route path="/login" Component={LoginForm} />
                 <Route path="/doctorlogin" Component={Doctorlogin} />
+                <Route path="/payment" Component={payment} />
+                <Route path="/QR" Component={QR} />
  
 {/* scope of private routes */}
                 <Route Component={PrivateRoutes}>
-              <Route path="/form/:id" Component={Form} />
+                 <Route path="/form/:id" Component={Form} />
                  <Route path="/appointment" Component={Appointment} />
                  <Route path="/room/:roomID" Component={Room} />
                  <Route path="/ambulance-booking" Component={AmbulanceBooking} />

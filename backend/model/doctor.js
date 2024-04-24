@@ -3,11 +3,11 @@ const doctor_schema = mongoose.Schema({
     name:{
         type:String, 
         default:"Dr. Ram Swami ayer",
-        required:true,
+       
     },
     expertise:{
         type:[String],
-        required:true
+       
     },
     image:{
         type:String,
@@ -20,23 +20,23 @@ const doctor_schema = mongoose.Schema({
     },
     password:{
         type:String,
-        required:true
+        
     },
     contact:{
         type:String,
-        required:true
+       
     },
     desc:{
         type:String,
-        required:true
+       
     },
     date:{
         type:[String],
-        required:true
+       
     },
     ammount:{
         type:Number,
-        required:true
+      
 
     },
     is_doctor:{

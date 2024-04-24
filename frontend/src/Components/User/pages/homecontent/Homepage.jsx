@@ -83,16 +83,16 @@ const Homepage = () => {
               
             }}> 
 
-            <Typography  sx={{
-              width:"500px",
-             marginTop:"50px",
-             fontSize:"30px",
-             fontStyle:"italic"
-            }}>
-            “I am at an age where I just want to be fit and healthy our bodies are our
-                                    responsibility! So start caring for your body and it will care for you. Eat clean it
-                                    will care for yout hard.”
-            </Typography>
+<Typography sx={{
+  width: "500px",
+  marginTop: "50px",
+  fontSize: "30px",
+  fontStyle: "italic",
+  color: "red" // Adding the color property
+}}>
+  “I am at an age where I just want to be fit and healthy. Our bodies are our responsibility! So start caring for your body and it will care for you. Eat clean; it will care for you hard.”
+</Typography>
+
            
             <Avatar
   alt="Remy Sharp"

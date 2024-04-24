@@ -41,9 +41,9 @@ const get_single_doctor=async(req,res)=>{
 
 const all_services = async (req, res) => {
     try {
-      
-        const user_service = await service
-          .find()
+        const user_service = await service.find();
+        console.log("user_service");
+        console.log(user_service);
           return res.status(200).json({user_service});
           
         

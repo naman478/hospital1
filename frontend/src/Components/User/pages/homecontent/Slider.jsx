@@ -93,6 +93,8 @@ const Screen = () => {
                     data-animation="fadeInLeft"
                     data-delay="0.1s"
                     fontSize={20}
+                    color="red"
+                   
                   >
                     Efficient hospital management system streamlining
                     operations, enhancing patient care, and optimizing resource

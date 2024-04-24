@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 import {
   Box,
   Container,
@@ -6,11 +6,11 @@ import {
   Typography,
   TextField,
   Button,
-} from '@mui/material';
-import { Email, Phone, LocationOn } from '@mui/icons-material';
-import axios from 'axios';
-import { toast } from 'react-hot-toast';
-import { useNavigate } from 'react-router-dom';
+} from "@mui/material";
+import { Email, Phone, LocationOn } from "@mui/icons-material";
+import axios from "axios";
+import { toast } from "react-hot-toast";
+import { useNavigate } from "react-router-dom";
 
 const ContactUsPage = () => {
   const navigate = useNavigate();
@@ -22,14 +22,15 @@ const ContactUsPage = () => {
       message,
       contact,
     };
-    const response = await axios.post('http://localhost:8080/patient/patientmessage', data);
+    const response = await axios.post(
+      "http://localhost:8080/patient/patientmessage",
+      data
+    );
     if (response.status === 200) {
       toast.success(response.data.message);
       navigate("/");
-
     } else {
       toast.error(response.data.message);
-
     }
   };
 
@@ -38,9 +39,8 @@ const ContactUsPage = () => {
   const [message, setMessage] = useState("");
   const [contact, setContact] = useState("");
 
-
   return (
-    <Box py={4} sx={{ backgroundColor: '#ced3db' }}>
+    <Box py={4} sx={{ backgroundColor: "#ced3db" }}>
       <Container maxWidth="md">
         <Typography variant="h4" align="center" gutterBottom>
           Contact Us
@@ -51,16 +51,14 @@ const ContactUsPage = () => {
             <Box display="flex" alignItems="center">
               <Email sx={{ mr: 1 }} />
               <Typography variant="body1">
-                Email: bastolaronak12@gmail.com
+                Email: goyalom935@gmail@gmail.com
               </Typography>
             </Box>
           </Grid>
           <Grid item xs={12} sm={6}>
             <Box display="flex" alignItems="center">
               <Phone sx={{ mr: 1 }} />
-              <Typography variant="body1">
-                Phone: +977-9862164447
-              </Typography>
+              <Typography variant="body1">Phone: +91-6264615221</Typography>
             </Box>
           </Grid>
         </Grid>
@@ -73,17 +71,13 @@ const ContactUsPage = () => {
             <Grid item xs={12} sm={6}>
               <Box display="flex" alignItems="center">
                 <LocationOn sx={{ mr: 1 }} />
-                <Typography variant="body1">
-                  Kathmandu
-                </Typography>
+                <Typography variant="body1">Noida</Typography>
               </Box>
             </Grid>
             <Grid item xs={12} sm={6}>
               <Box display="flex" alignItems="center">
                 <LocationOn sx={{ mr: 1 }} />
-                <Typography variant="body1">
-                Baneshwor
-                </Typography>
+                <Typography variant="body1">om</Typography>
               </Box>
             </Grid>
           </Grid>
@@ -94,10 +88,23 @@ const ContactUsPage = () => {
             Map
           </Typography>
           <Box height={400} mt={2}>
-            {/* <iframe width="100%" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Baneshwor+(Bharosha%20Hospital)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.maps.ie/population/">Population mapping</a></iframe> */}
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2263.1707428429418!2d85.3351713!3d27.6939869!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb1999d574786b%3A0x727aa56d32352da2!2z4KSt4KSw4KWL4KS44KS-IOCkheCkuOCljeCkquCkpOCkvuCksiDgpKrgpY3gpLDgpL4u4KSy4KS_!5e1!3m2!1sne!2snp!4v1694709428278!5m2!1sne!2snp" width="850" height="400"  loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe
+              width="100%"
+              height="480"
+              frameborder="0"
+              scrolling="no"
+              marginheight="0"
+              marginwidth="0"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1751.9590260468183!2d77.32409253873931!3d28.57222339392448!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce44e94a2663f%3A0x96317734f1be41f7!2sNoida%20Sector%2018%2C%20Noida%2C%20Uttar%20Pradesh%20201301!5e0!3m2!1sen!2sin!4v1713960107238!5m2!1sen!2sin"
+            >
+              <a href="https://www.maps.ie/population/">Population mapping</a>
+            </iframe>
           </Box>
         </Box>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
 
         <Box mt={4}>
           <Typography variant="h6" gutterBottom>
@@ -145,7 +152,6 @@ const ContactUsPage = () => {
                   required
                   value={message}
                   onChange={(e) => setMessage(e.target.value)}
-
                 />
               </Grid>
               <Grid item xs={12}>

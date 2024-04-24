@@ -46,14 +46,15 @@ const signin = async (req, res) => {
 const doctorsignin = async (req, res) => {
   try {
       const { email, password } = req.body;
-      console.log(email,password)
+      //console.log(email,password)
       if (!email | !password) {
          return  res.status(202).json({ message: "incomplete content" });
       } else {
           auth_user = await doctor.findOne({ email });
-          console.log(auth_user);
+          console.log("hii",auth_user);
+          
           const token = jsonwebtoken.sign({auth_user},process.env.SECRET_KEY,{expiresIn:"5h"} );
-          console.log(token);
+          console.log("hiiiii",token);
           res.cookie("authorization", `Bearer ${token}`);
           return res.status(200).json({ token:`Bearer ${token}`, user:auth_user});
       }
@@ -62,8 +63,6 @@ const doctorsignin = async (req, res) => {
   } catch (error) {
     console.log(error);
       res.status(500).json({ message: error.message });
-
-
   }
 
 

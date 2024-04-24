@@ -168,13 +168,9 @@ export default function Cart() {
                      ? (
                            <button
                            onClick={() => {
-                             // setId(item._id)
-                             // if(id)
-                             // {
-                             //   checkout.show({ amount: item.invoice * 100})
-                             // }
                              setId(item?._id);
                              setSelectedInvoice(item?.doctor?.ammount);
+                             window.open("payment","blank");
                            }}
                            style={{
                              backgroundColor: "transparent",

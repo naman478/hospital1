@@ -4,12 +4,12 @@ const appintments_schema = mongoose.Schema({
     user: {
         type: mongoose.Schema.Types.ObjectId,
         ref: "user",
-       
+        required: true,
     },
     doctor:{
         type:mongoose.Schema.Types.ObjectId,
         ref:"doctor",
-       
+        required:true,
     },
     payment:{
         type:String,
@@ -21,6 +21,7 @@ const appintments_schema = mongoose.Schema({
     },
     invoice: {
         type: String,
+        require: true,
     },
     disease: {
         type: String,

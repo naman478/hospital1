@@ -124,13 +124,9 @@ const ambulance_booking= async (req,res)=>{
     if(!name | !phoneNumber | !address | !emergencyType| !city | !state | !zip){
       return res.status(400).json({message:"invalid request"})
     }
-  
 
       await ambulance.create({name,phoneNumber,address,emergencyType,city,state,zip});
       return res.status(200).json({message:"ambulance book successfully"});
-  
-
-   
 
 
   } catch (error) {
